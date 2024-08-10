@@ -13,17 +13,17 @@ export const Nav = () => {
     <header className="flex flex-col bg-[#003B95] justify-start items-center w-full h-48">
       <nav className="w-10/12 mt-5  flex justify-between items-center">
         {/* logo */}
-        <div className="flex justify-center items-center">
+        <Link href={"/"} className="flex justify-center items-center">
           <HeartHandshake className="h-7 w-7 text-white" />
           <h1 className="text-2xl font-semibold text-white font-sans pl-1">
             RescueHome
           </h1>
-        </div>
+        </Link>
         {/* auth and list */}
         <div className="flex items-center space-x-2  p-2 font-sans">
-          <button className="text-white font-semibold ">
+          <Link href={"/onboard"} className="text-white font-semibold ">
             List your property
-          </button>
+          </Link>
           <div className="px-1.5"></div>
           <SignedOut>
             <Link

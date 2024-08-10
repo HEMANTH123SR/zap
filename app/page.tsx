@@ -3,6 +3,7 @@ import { Faq } from "@/components/component/Faq";
 import { PlaceCard } from "@/components/component/PlaceCard";
 import { Testimonials } from "@/components/component/Testimonials";
 import { BedDouble, CalendarDays, UserRound } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +20,10 @@ export default function Home() {
       </div>
       {/* search section */}
       <div className="relative">
-        <div className="bg-[#FFB700] relative -top-5   p-1 rounded-lg shadow-md flex items-center space-x-1">
+        <Link
+          href="/search"
+          className="bg-[#FFB700] relative -top-5 cursor-pointer  p-1 rounded-lg shadow-md flex items-center space-x-1"
+        >
           <div className="flex items-center bg-white p-2 rounded-md flex-grow">
             <BedDouble
               className="text-gray-700 mr-2 w-8 h-8"
@@ -58,7 +62,7 @@ export default function Home() {
             {/* <Search className=" mr-2 w-8 h-8" strokeWidth={1.3} /> */}
             Search
           </button>
-        </div>
+        </Link>
       </div>
       {/* Recent disaster area section */}
       <section className="flex flex-col  w-10/12">

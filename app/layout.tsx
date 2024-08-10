@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 
 // custom components
 import { Nav } from "@/components/component/Nav";
@@ -19,12 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} `}>
-        <Nav />
-        {children}
-        <Fotter />
-      </body>
-    </html>
+    <ClerkProvider>
+
+      <html lang="en">
+        <body className={`${inter.className} `}>
+          <Nav />
+          {children}
+          <Fotter />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

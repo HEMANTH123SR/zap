@@ -101,7 +101,6 @@ export default function Home() {
       <Testimonials />
       {/* faq */}
       <Faq />
-      <div className="h-[600px]"></div>
     </main>
   );
 }

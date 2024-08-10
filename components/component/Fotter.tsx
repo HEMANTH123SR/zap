@@ -1,33 +1,24 @@
+import { HeartHandshake, ChevronUp } from "lucide-react";
 export const Fotter = () => {
   return (
-    <footer className="bg-gray-100 border-t-2 border-[#003B95]">
+    <footer className="bg-white border-t-4 border-[#003B95]">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24 ">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <a
-            className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
+            className="inline-block rounded-full bg-[#003B95] p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
             href="#MainContent"
           >
             <span className="sr-only">Back to top</span>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <ChevronUp className="h-5 w-5" />
           </a>
         </div>
 
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
-            <div className="flex justify-center lg:justify-start">
-              <h1 className="text-2xl font-semibold text-[#003B95] font-sans ">
+            <div className="flex items-center justify-center lg:justify-start">
+              <HeartHandshake className="h-7 w-7 text-[#003B95]" />
+
+              <h1 className="text-2xl font-semibold text-[#003B95] font-sans pl-1">
                 RescueHome
               </h1>
             </div>

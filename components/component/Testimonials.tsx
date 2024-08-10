@@ -1,23 +1,23 @@
 const testimonials = [
   {
     name: "Emily Johnson",
-    title: "Fantastic Platform for Portfolio Creation",
+    title: "Lifesaving Platform During Crisis",
     quote:
-      "RescueHome made it incredibly easy to build and customize my portfolio. The process was smooth and intuitive, and the end result exceeded my expectations. Highly recommend for anyone looking to showcase their work!",
+      "RescueHome was a lifesaver when our area was hit by a sudden flood. We quickly found a safe shelter nearby and received crucial information. The platform's ease of use made a stressful situation much more manageable.",
     rating: 5,
   },
   {
     name: "Michael Smith",
-    title: "Excellent Service and Support",
+    title: "Excellent Emergency Resource",
     quote:
-      "The support team at RescueHome is outstanding. They were quick to respond to my queries and helped me with every step of setting up my portfolio. The platform itself is user-friendly and versatile.",
-    rating: 4,
+      "During a wildfire evacuation, RescueHome helped us locate temporary housing and connect with local support services. The real-time updates and user-friendly interface were invaluable in our time of need.",
+    rating: 5,
   },
   {
     name: "Sarah Brown",
-    title: "User-Friendly and Professional",
+    title: "Reliable and Fast in Emergencies",
     quote:
-      "Building my portfolio with RescueHome was a breeze. The templates are stylish and customizable, and the interface is easy to navigate. I’m thrilled with the final result and the positive feedback I’ve received.",
+      "When a severe storm left us without power, RescueHome guided us to the nearest emergency shelter. The quick search function and detailed information about available resources were incredibly helpful.",
     rating: 5,
   },
 ];

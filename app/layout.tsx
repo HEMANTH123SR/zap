@@ -4,6 +4,7 @@ import "./globals.css";
 
 // custom components
 import { Nav } from "@/components/component/Nav";
+import { Fotter } from "@/components/component/Fotter"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} `}>
         <Nav />
         {children}
+        <Fotter />
       </body>
     </html>
   );

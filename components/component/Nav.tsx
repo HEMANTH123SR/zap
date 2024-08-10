@@ -1,12 +1,13 @@
-import { BedSingle, Shield, Sofa, UserRound, Map } from "lucide-react";
+import { BedSingle, Shield, Sofa, UserRound, Map, HeartHandshake } from "lucide-react";
 
 export const Nav = () => {
     return (
         <header className="flex flex-col bg-[#003B95] justify-start items-center w-full h-48">
             <nav className="w-10/12 mt-5  flex justify-between items-center">
                 {/* logo */}
-                <div className="">
-                    <h1 className="text-2xl font-semibold text-white font-sans pl-4">
+                <div className="flex justify-center items-center">
+                    <HeartHandshake className="h-7 w-7 text-white" />
+                    <h1 className="text-2xl font-semibold text-white font-sans pl-1">
                         RescueHome
                     </h1>
                 </div>

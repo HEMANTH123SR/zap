@@ -1,14 +1,8 @@
+import Cta from "@/components/component/Cta";
+import { Faq } from "@/components/component/Faq";
 import { PlaceCard } from "@/components/component/PlaceCard";
-import { BedDouble, CalendarDays, UserRound, Search } from "lucide-react";
-import {
-  FaSearch,
-  FaHandshake,
-  FaHome,
-  FaFirstAid,
-  FaUtensils,
-  FaAmbulance,
-  FaBus,
-} from "react-icons/fa";
+import { Testimonials } from "@/components/component/Testimonials";
+import { BedDouble, CalendarDays, UserRound } from "lucide-react";
 
 export default function Home() {
   return (
@@ -66,7 +60,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
       {/* Recent disaster area section */}
       <section className="flex flex-col  w-10/12">
         <h3 className="text-2xl font-semibold text-black">
@@ -77,38 +70,37 @@ export default function Home() {
         </h5>
         <div className="flex space-x-7">
           <PlaceCard
-
             image="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018215.jpg?k=a7e3a19c5810cc3085c669894a09ff20bdca3d872f9b5bdc29ff3c07af7b0c72&o="
             place="Mysore"
           />
           <PlaceCard
-
             image="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018267.jpg?k=1490379e254d86584e062afb13393830c21737a6d6a0a50371011ce55cac64ee&o="
             place="Kanchipuram
 "
           />
           <PlaceCard
-
             image="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018158.jpg?k=7a99adbec9272ba7dc34c7f345f4e55ab07b39705091cb3fefbcfd761667dd98&o="
             place="Tiruchirappalli
 "
           />
           <PlaceCard
-
             image="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018281.jpg?k=cca5e4d83c39b30620bed9bfda5a9cd6bfc750bff57b2dac6d88bfd94b2b34c9&o="
             place="Hospet
 "
           />
           <PlaceCard
-
             image="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018284.jpg?k=1461bebf1c99cab9ba48eeeaab97c403d93930c4a9d7aa5f91a47d55fd449122&o="
             place="Hampi
 "
           />
-
-
         </div>
       </section>
+      {/* cta section */}
+      <Cta />
+      {/* testimonials section */}
+      <Testimonials />
+      {/* faq */}
+      <Faq />
       <div className="h-[600px]"></div>
     </main>
   );

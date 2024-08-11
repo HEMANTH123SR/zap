@@ -27,13 +27,13 @@ export const Nav = () => {
           <div className="px-1.5"></div>
           <SignedOut>
             <Link
-              href={`https://current-whale-69.accounts.dev/sign-up?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F`}
+              href={`${process.env.NEXT_PUBLIC_IN_DEV_MOD === "true" ? "https://current-whale-69.accounts.dev/sign-up?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F" : "https://current-whale-69.accounts.dev/sign-up?redirect_url=https%3A%2F%2Fzap-kohl.vercel.app%2Fonboard"} `}
               className="text-[#1888EB] bg-white border rounded-sm shadow  py-1.5 font-semibold px-3 text-sm"
             >
               Register
             </Link>
             <Link
-              href={`https://current-whale-69.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F`}
+              href={`${process.env.NEXT_PUBLIC_IN_DEV_MOD === "true" ? "https://current-whale-69.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F" : "https://current-whale-69.accounts.dev/sign-in?redirect_url=https%3A%2F%2Fzap-kohl.vercel.app%2Fonboard"} `}
               className="text-[#1888EB] bg-white border rounded-sm shadow py-1.5 font-semibold px-3 text-sm"
             >
               Sign in

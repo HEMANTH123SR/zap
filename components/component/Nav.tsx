@@ -58,14 +58,20 @@ export const Nav = () => {
           <span className="text-lg font-light">Safety</span>
         </div>
 
-        <div className="flex space-x-2 items-center cursor-pointer hover:bg-[#1A4FA0] px-5 rounded-full py-1.5">
+        <Link
+          href={"https://current-whale-69.accounts.dev/user"}
+          className="flex space-x-2 items-center cursor-pointer hover:bg-[#1A4FA0] px-5 rounded-full py-1.5"
+        >
           <UserRound className="w-6 h-6 " strokeWidth={1.3} />
           <span className="text-lg font-light">Profile</span>
-        </div>
-        <div className="flex space-x-2 items-center cursor-pointer hover:bg-[#1A4FA0] px-5 rounded-full py-1.5">
+        </Link>
+        <Link
+          href={"/maps"}
+          className="flex space-x-2 items-center cursor-pointer hover:bg-[#1A4FA0] px-5 rounded-full py-1.5"
+        >
           <Map className="w-6 h-6 " strokeWidth={1.3} />
           <span className="text-lg font-light">Map</span>
-        </div>
+        </Link>
       </div>
     </header>
   );
